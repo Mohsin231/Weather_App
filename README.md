@@ -3,9 +3,9 @@
 
 ## Link to the API you plan to use
 ### Average Daily Weather
-> http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89 
+> http://api.openweathermap.org/data/2.5/weather?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89
 ### Detailed Daily Weather Report 
-> http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89 (detailed weather report)
+> http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89
 ## Example data response you plan to use
 
 ### 1st API
