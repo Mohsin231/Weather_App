@@ -100,13 +100,12 @@ dt_txt: "2021-01-13 18:00:00"
 
 
 ## Visual of your component hierarchy
-![image](https://media.git.generalassemb.ly/user/31948/files/fb57e500-559d-11eb-8eef-0fd8f8335adc)
+![Component_Hierarchy](https://media.git.generalassemb.ly/user/31948/files/5e07ab80-55b3-11eb-84e9-e161904de694)
 
 #### OPTIONAL Component Details
 | Component | Description | State/Props
 | --- | --- | :---: |
 | App | This will make the initial data request and include React Router | State |
-| Header | This will render the header include the nav | Props |
 | WeatherList | This will render all of the weather data | Props |
 | Weather| This will render the user's location's weather | Props |
 | WeatherDetails| This will render the user's location's weather | Props |
