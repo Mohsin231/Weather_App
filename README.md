@@ -1,4 +1,3 @@
-# Weather_App
 ## Project Description 
 > Displays a very detailed 5 day forecast for any location the user chooses
 
@@ -7,6 +6,55 @@
 > http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89 (detailed weather report)
 
 ## Example data response you plan to use
+
+### 1st API
+```json
+{
+coord: {
+lon: -73.9496,
+lat: 40.6501
+},
+weather: [
+{
+id: 804,
+main: "Clouds",
+description: "overcast clouds",
+icon: "04d"
+}
+],
+base: "stations",
+main: {
+temp: 279.08,
+feels_like: 272.26,
+temp_min: 278.15,
+temp_max: 280.15,
+pressure: 1015,
+humidity: 49
+},
+visibility: 10000,
+wind: {
+speed: 6.17,
+deg: 260
+},
+clouds: {
+all: 90
+},
+dt: 1610565988,
+sys: {
+type: 1,
+id: 4610,
+country: "US",
+sunrise: 1610540285,
+sunset: 1610574641
+},
+timezone: -18000,
+id: 5110302,
+name: "Brooklyn",
+cod: 200
+}
+```
+
+### 2nd API
 ```json
 {
 cod: "200",
@@ -50,8 +98,8 @@ dt_txt: "2021-01-13 18:00:00"
 },
 ```
 
+
 ## Visual of your component hierarchy
-> Copy and paste or drag and drop your images here.
 ![image](https://media.git.generalassemb.ly/user/31948/files/fb57e500-559d-11eb-8eef-0fd8f8335adc)
 
 #### OPTIONAL Component Details
@@ -61,6 +109,7 @@ dt_txt: "2021-01-13 18:00:00"
 | Header | This will render the header include the nav | Props |
 | WeatherList | This will render all of the weather data | Props |
 | Weather| This will render the user's location's weather | Props |
+| WeatherDetails| This will render the user's location's weather | Props |
 
 ## Wire Frames
 [WeatherApp_Wireframe.pdf](https://git.generalassemb.ly/SEIR-1130/project-2/files/3728/WeatherApp_Wireframe.pdf)
@@ -76,3 +125,6 @@ As a user, I want some type of visual for the location's weather
 
 ### Stretch Goals
 As a user, I want a video explaining the location's weather
+As a user, I want a live forecast map
+
+
