@@ -2,7 +2,6 @@
 > Displays a very detailed 5 day forecast for any location the user chooses
 
 ## Link to the API you plan to use
-## Link to the API you plan to use
 ### Average Daily Weather
 > http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89 
 ### Detailed Daily Weather Report 
