@@ -1,28 +1,33 @@
-import logo from './logo.svg';
+import React from 'react'
+import Weather from './Components/Weather'
+import WeatherDetails from './Components/WeatherDetails'
+import WeatherList from './Components/WeatherList'
 import './App.css';
 
 function App() {
+  const searchOptions = {
+    key: process.env.FIVEDAY,
+    key2: process.env.DETAILED,
+    city: 25,
+    state: 'G',
+    country: "",
+    count: 5,
+    api: `http://api.openweathermap.org/data/2.5/forecast/daily?q=${city},${state},${country}&cnt=${count}&appid=`,
+    api2: `http://api.openweathermap.org/data/2.5/forecast?q=${city},${state},${country}&appid=`
+  };
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+      <Weather/>
+      <WeatherDetails/>
+      <WeatherList/>
+      
     </div>
+   
   );
 }
 
 export default App;
 
-// > http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89 (average weather for the day)
-// > http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89 (detailed weather report)
