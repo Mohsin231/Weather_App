@@ -1,30 +1,30 @@
 import React, { useState, useEffect } from "react";
 
-const WeatherDetails = ({data, setData }) => {
-  const [data, setData] = useState()
+const WeatherDetails = ({data, setData, setWeatherDetails }) => {
 
-  let weatherDetailURL = `http://api.openweathermap.org/data/2.5/weather?q=${data.city},${data.state},${data.country}&appid=${process.env.REACT_APP_DETAILED}`
-
-  useEffect(() => {
-
-    fetch(weatherDetailURL)
-      .then(data => data.json())
-      .then(data => {
-        console.log(data)
-        setData(data);
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  }, [])
-
-
-    return (
+  return (
+    <>
       <div>
-        <h1>Weather details</h1>
+        <h1>Weather</h1>
+
+        {weatherDetails.main && 
+        (
+          <div className="city-info">
+
+            
+
+          </div>
+        )
+        }
       </div>
+
+    </>
+      
     );
 }
+      
+
+    
 
 export default WeatherDetails;
 //displays details of weather

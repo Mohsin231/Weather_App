@@ -14,30 +14,31 @@ function App() {
     country:""
   })
 
+  const [weatherData, setWeatherData] = useState(null);
+
+  const [weatherDetails, setWeatherDetails] = useState(null);
+
   function handleChange(event) {
-      setData(event.target.value);
+    setData({...data, [event.target.id]:event.target.value})
+    console.log(data)
+    
     }
     
-    function handleSubmit(event) {
-      event.preventDefault();
-      Weather();
-      
-    }
+    
 
   return (
     <>
     <div className="App">
-
-  
-      <Route path="/" exact component={() => <Weather data={data} setData={setData}/>} />
     
       <SearchForm 
       handleChange={handleChange}
-      handleSubmit={handleSubmit}
       data={data}
-      
-      
+      setData={setData}
+      setWeatherData={setWeatherData}
+      // setWeatherDetails={setWeatherDetails}
       />
+
+<Route path="/" exact component={() => <Weather data={data} setData={setData} weatherData={weatherData} weatherDetails={weatherDetails}/>} />
       
 
       
