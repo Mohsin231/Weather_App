@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-import './App.css';
 
-
-let weatherDetailURL = `http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid=c0e729c8b49ab07ba3d7d006687d5c89`
-
-const WeatherDetails = () => {
+const WeatherDetails = ({data, setData }) => {
   const [data, setData] = useState()
 
+  let weatherDetailURL = `http://api.openweathermap.org/data/2.5/weather?q=${data.city},${data.state},${data.country}&appid=${process.env.REACT_APP_DETAILED}`
+
   useEffect(() => {
-    // define DOM variables 
 
     fetch(weatherDetailURL)
       .then(data => data.json())
@@ -24,9 +21,10 @@ const WeatherDetails = () => {
 
     return (
       <div>
-        {data}
+        <h1>Weather details</h1>
       </div>
     );
 }
 
 export default WeatherDetails;
+//displays details of weather
