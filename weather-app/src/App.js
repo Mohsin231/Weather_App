@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Weather from './Components/Weather'
-// import WeatherDetails from './Components/WeatherDetails'
+import WeatherDetails from './Components/WeatherDetails'
 import SearchForm from './Components/SearchForm'
 import { Route } from 'react-router-dom';
 import './App.css';
@@ -28,17 +28,19 @@ function App() {
 
   return (
     <>
+  
     <div className="App">
-    
       <SearchForm 
       handleChange={handleChange}
       data={data}
       setData={setData}
       setWeatherData={setWeatherData}
-      // setWeatherDetails={setWeatherDetails}
+      setWeatherDetails={setWeatherDetails}
       />
 
-<Route path="/" exact component={() => <Weather data={data} setData={setData} weatherData={weatherData} weatherDetails={weatherDetails}/>} />
+<Route path="/" exact component={() => <Weather data={data} setData={setData} weatherData={weatherData} />} />
+<Route path="/" exact component={() => <WeatherDetails data={data} setData={setData} weatherDetails={weatherDetails} />} />
+
       
 
       
@@ -49,5 +51,5 @@ function App() {
 }
 
 export default App;
-{/* <Route path="/details/" component={WeatherDetails} /> */}
+
 

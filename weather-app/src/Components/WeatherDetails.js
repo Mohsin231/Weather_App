@@ -1,30 +1,27 @@
 import React, { useState, useEffect } from "react";
 
-const WeatherDetails = ({data, setData, setWeatherDetails }) => {
+const WeatherDetails = ({data, setData, weatherDetails }) => {
 
   return (
-    <>
-      <div>
-        <h1>Weather</h1>
+    <div className="main">
+      <h1>Weather Details</h1>
 
-        {weatherDetails.main && 
-        (
-          <div className="city-info">
-
-            
-
+      {weatherDetails && 
+      (
+        <div className="moreInfo">
+          <h2>Feels Like: {weatherDetails.main.feels_like}</h2>
+          <h2>Min: {weatherDetails.main.temp_min}, Max:{weatherDetails.main.temp_max}</h2>
+          <h2>Humidity: {weatherDetails.main.humidity}</h2>
+          <h2>Wind Speed: {weatherDetails.wind.speed}</h2>
           </div>
-        )
-        }
-      </div>
 
-    </>
-      
-    );
+)
 }
-      
-
+                    
+    </div>
     
+  );
+}   
 
 export default WeatherDetails;
 //displays details of weather

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 
   // Destructure props object
-  function SearchForm({handleChange, data, setData, setWeatherData }) {
+  function SearchForm({handleChange, data, setData, setWeatherData, setWeatherDetails }) {
 
 
     const getData = () => {
@@ -13,6 +13,7 @@ import React, {useEffect} from 'react';
       .then(res => {
         console.log(res)
         setWeatherData(res);
+        setWeatherDetails(res)
       })
       .catch(err => {
         console.error(err);
@@ -22,28 +23,6 @@ import React, {useEffect} from 'react';
     event.preventDefault();
     getData(); 
   }
-
-//   //weatherDeatails
-//   const getData2 = () => {
-
-//     let url = ``http://api.openweathermap.org/data/2.5/weather?q=${data.city},${data.state},${data.country}&units=imperial&appid=${process.env.REACT_APP_DETAILED}``
-
-//   fetch(url)
-//     .then(res => res.json())
-//     .then(res => {
-//       console.log(res)
-//       setWeatherDetails(res);
-//     })
-//     .catch(err => {
-//       console.error(err);
-//     });}
-
-// function handleSubmit(event) {
-//   event.preventDefault();
-//   getData2();
-  
-  
-// }
 
     return (
       <form onSubmit={handleSubmit} className="searchForm">
