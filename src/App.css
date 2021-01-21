@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  
+}
+
+body {
+  background: url("./images/weatherBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
