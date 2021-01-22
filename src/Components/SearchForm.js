@@ -1,4 +1,6 @@
 import React, {useEffect} from 'react';
+import WeatherDetails from './WeatherDetails';
+
 
   // Destructure props object
   function SearchForm({handleChange, data, setData, setWeatherData, setWeatherDetails }) {
@@ -53,7 +55,7 @@ import React, {useEffect} from 'react';
           onChange={handleChange}
           value={data.country}
         />
-        <button type="submit">Search</button>
+        <button onClick={() => <WeatherDetails />}>More Details</button>
       </form>
     );
   }
