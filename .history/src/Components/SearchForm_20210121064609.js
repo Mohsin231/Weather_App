@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import WeatherDetails from './WeatherDetails';
-//search
 
 
   // Destructure props object
