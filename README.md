@@ -66,7 +66,7 @@ cod: 200
 | WeatherDetails| This will display more weather details| Props |
 
 ## Wire Frames
-[WeatherApp_Wireframe.pdf](https://git.generalassemb.ly/SEIR-1130/project-2/files/3728/WeatherApp_Wireframe.pdf)
+[wireframe.pdf](./wireframe)
 
 ## User Stories
 
