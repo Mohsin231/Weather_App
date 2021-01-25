@@ -1,11 +1,9 @@
 ## Project Description 
-> Displays a very detailed 5 day forecast for any location the user chooses
+> Displays weather for any location in the world
 
 ## Link to the API you plan to use
 ### Average Daily Weather
 > http://api.openweathermap.org/data/2.5/weather?q=brooklyn,ny,us&appid={APIKey}
-### Detailed Daily Weather Report 
-> http://api.openweathermap.org/data/2.5/forecast?q=brooklyn,ny,us&appid={APIKey}
 ## Example data response you plan to use
 
 ### 1st API
@@ -54,51 +52,6 @@ name: "Brooklyn",
 cod: 200
 }
 ```
-
-### 2nd API
-```json
-{
-cod: "200",
-message: 0,
-cnt: 40,
-list: [
-{
-dt: 1610560800,
-main: {
-temp: 278,
-feels_like: 272.64,
-temp_min: 277.36,
-temp_max: 278,
-pressure: 1017,
-sea_level: 1017,
-grnd_level: 1015,
-humidity: 60,
-temp_kf: 0.64
-},
-weather: [
-{
-id: 803,
-main: "Clouds",
-description: "broken clouds",
-icon: "04d"
-}
-],
-clouds: {
-all: 69
-},
-wind: {
-speed: 4.38,
-deg: 238
-},
-visibility: 10000,
-pop: 0,
-sys: {
-pod: "d"
-},
-dt_txt: "2021-01-13 18:00:00"
-},
-```
-
 
 ## Visual of your component hierarchy
 ![Component_Hierarchy](https://media.git.generalassemb.ly/user/31948/files/5e07ab80-55b3-11eb-84e9-e161904de694)
