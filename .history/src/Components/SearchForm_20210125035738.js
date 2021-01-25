@@ -1,7 +1,11 @@
 import React, {useEffect} from 'react';
-import '../SearchForm.css';
+import WeatherDetails from './WeatherDetails';
+//search
 
+
+  // Destructure props object
   function SearchForm({handleChange, data, setData, setWeatherData, setWeatherDetails }) {
+
 
     const getData = () => {
 
@@ -25,8 +29,7 @@ import '../SearchForm.css';
 
     return (
       <form onSubmit={handleSubmit} className="searchForm">
-        <input 
-          className="search"
+        <input
           id="city"
           placeholder="ex: brooklyn"
           type="text"
@@ -36,7 +39,6 @@ import '../SearchForm.css';
           value={data.city}
         />
         <input
-          className="search"
           id="state"
           placeholder="ex: new york"
           type="text"
@@ -46,7 +48,6 @@ import '../SearchForm.css';
           value={data.state}
         />
         <input
-          className="search"
           id="country"
           placeholder="ex: us"
           type="text"
@@ -55,7 +56,7 @@ import '../SearchForm.css';
           onChange={handleChange}
           value={data.country}
         />
-        <button className="button">Search</button>
+        <button onClick={() => <WeatherDetails/>}>More Details</button>
       </form>
     );
   }

@@ -1,7 +1,11 @@
 import React, {useEffect} from 'react';
 import '../SearchForm.css';
+//search
 
+
+  // Destructure props object
   function SearchForm({handleChange, data, setData, setWeatherData, setWeatherDetails }) {
+
 
     const getData = () => {
 
@@ -36,7 +40,7 @@ import '../SearchForm.css';
           value={data.city}
         />
         <input
-          className="search"
+        className="search"
           id="state"
           placeholder="ex: new york"
           type="text"
@@ -46,7 +50,7 @@ import '../SearchForm.css';
           value={data.state}
         />
         <input
-          className="search"
+        className="search"
           id="country"
           placeholder="ex: us"
           type="text"

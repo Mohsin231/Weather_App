@@ -6,6 +6,7 @@ const WeatherDetails = ({data, setData, weatherDetails }) => {
 
   return (
     <div className="main">
+      <h1>Weather Details</h1>
 
       {weatherDetails && 
       (

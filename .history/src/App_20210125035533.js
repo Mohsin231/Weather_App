@@ -5,6 +5,7 @@ import SearchForm from './Components/SearchForm'
 import { Route } from 'react-router-dom';
 import './App.css';
 
+
 function App() {
 
   const [data, setData] = useState({
@@ -13,19 +14,27 @@ function App() {
     country:""
   })
 
-  //weather.js data
   const [weatherData, setWeatherData] = useState(null);
-  //weatherDetails data
+
   const [weatherDetails, setWeatherDetails] = useState(null);
 
-  //displays weather.js data
+  const moreDetails = () => {
+    return <WeatherDetails/>
+  }
+
+
+
   function handleChange(event) {
     setData({...data, [event.target.id]:event.target.value})
     console.log(data)
+    
     }
     
+    
+
   return (
     <>
+  
     <div className="App">
       <SearchForm 
       handleChange={handleChange}
@@ -35,9 +44,12 @@ function App() {
       setWeatherDetails={setWeatherDetails}
       />
 
-<Route path="/" exact component={() => <Weather data={data} setData={setData} weatherData={weatherData}  />} />
+<Route path="/" exact component={() => <Weather data={data} setData={setData} weatherData={weatherData} moreDetails={moreDetails}/>} />
 <Route path="/" exact component={() => <WeatherDetails data={data} setData={setData} weatherDetails={weatherDetails} />} />
-    
+
+      
+
+      
     </div>
     </>
    

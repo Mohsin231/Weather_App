@@ -1,0 +1,13 @@
+.moreInfo {
+    padding: 50px 25px 25px, 25px;
+    border-radius: 25px;
+    background: rgba(235, 230, 230, 0.85);
+    font-size: 10px;
+}
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

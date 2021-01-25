@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import WeatherDetails from "../Components/WeatherDetails";
 import '../Weather.css';
+
 
 const Weather = ({ data, setData, weatherData }) => {
   const [action, setAction] = useState("");
 
   return (
       <div className="main">
+        <h1>Weather</h1>
 
         {weatherData && 
         (
@@ -29,7 +31,12 @@ const Weather = ({ data, setData, weatherData }) => {
             </div>
 
             <button onClick = {() => {setAction("moreDetails")}} id="moreDetails">Show more details...</button>
-            </div>     
+            </div>
+
+            
+            
+
+            
 
 )
 }
@@ -44,7 +51,7 @@ const Weather = ({ data, setData, weatherData }) => {
 }
 
 export default Weather;
-
+//extracts information 
 
 
 
