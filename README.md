@@ -54,7 +54,7 @@ cod: 200
 ```
 
 ## Visual of your component hierarchy
-![Component_Hierarchy](https://media.git.generalassemb.ly/user/31948/files/5e07ab80-55b3-11eb-84e9-e161904de694)
+
 
 #### OPTIONAL Component Details
 | Component | Description | State/Props
