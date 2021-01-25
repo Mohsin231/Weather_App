@@ -66,7 +66,7 @@ cod: 200
 | WeatherDetails| This will display more weather details| Props |
 
 ## Wire Frames
-[wireframe.pdf](./wireframe)
+[wireframe.pdf](./wireframe.pdf)
 
 ## User Stories
 
