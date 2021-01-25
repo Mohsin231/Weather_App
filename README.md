@@ -70,14 +70,14 @@ cod: 200
 ## User Stories
 
 ### MVP Goals
-> As a User, I want the website to be easy to use
-> As a user, I want the UI/UX design to be great
-> As a user, I want the weather to be displayed for the specified location
-> As a user, I want more information about the location's weather other than the temperature
-> As a user, I want some type of visual for the location's weather
+* As a User, I want the website to be easy to use
+* As a user, I want the UI/UX design to be great
+* As a user, I want the weather to be displayed for the specified location
+* As a user, I want more information about the location's weather other than the temperature
+* As a user, I want some type of visual for the location's weather
 
 ### Stretch Goals
-> As a user, I want a video explaining the location's weather
-> As a user, I want a live forecast map
-> As a user, I want a 5 day forcast
+* As a user, I want a video explaining the location's weather
+* As a user, I want a live forecast map
+* As a user, I want a 5 day forcast
 
