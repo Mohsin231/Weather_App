@@ -60,9 +60,9 @@ cod: 200
 | Component | Description | State/Props
 | --- | --- | :---: |
 | App | This will make the initial data request and include React Router | State |
-| WeatherList | This will render all of the weather data | Props |
-| Weather| This will render the user's location's weather | Props |
-| WeatherDetails| This will render the user's location's weather | Props |
+| SearchForm | This will render all of the weather data from the API | Props |
+| Weather| This will display the current weather | Props |
+| WeatherDetails| This will display more weather details| Props |
 
 ## Wire Frames
 [WeatherApp_Wireframe.pdf](https://git.generalassemb.ly/SEIR-1130/project-2/files/3728/WeatherApp_Wireframe.pdf)
