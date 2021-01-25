@@ -54,6 +54,7 @@ cod: 200
 ```
 
 ## Visual of your component hierarchy
+![Componenet Hierarcy](/Component_Hierarchy.PNG)
 
 
 #### OPTIONAL Component Details
